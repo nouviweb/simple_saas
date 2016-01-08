@@ -2,14 +2,13 @@
 <html>
 <head>
   <title>SimpleSaas</title>
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
- <%#javascript_include_tag 'application', 'data-turbolinks-track' => true -%> 
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+ <%-# javascript_include_tag 'application', 'data-turbolinks-track' => true -%> 
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<!-- navbar begin -->
-<nav class="navbar navbar-default navbar-static-top" role="navigation">
+<!-- navbar start -->
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -19,25 +18,10 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      
-      <%= link_to 'My Site', root_path, class: 'navbar-brand' %>
-      
       <a class="navbar-brand" href="#">Brand</a>
     </div>
-    
-    <div class="collapse navbar-collapse" id="main-nav-collpase">
-    	<ul class="nav navbar-nav navbar-right">
-    	<li><%= link_to "About", about_path %></li>
-    	</ul>
-    </div>
- </nav>
-    
-    
-    
 <!-- navbar end -->
-<div class="container">
 <%= yield %>
-</div>
 
 </body>
 </html>
