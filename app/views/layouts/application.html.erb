@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SimpleSaas</title>
+  <title>NouviWeb</title>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
  <%#javascript_include_tag 'application', 'data-turbolinks-track' => true -%> 
   <%= csrf_meta_tags %>
@@ -19,10 +19,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+
+      <!--das icon soll zu home führen -->
+      <%= link_to root_path, class:'navbar-brand' do %>
+      <i class="fa fa-users "></i>
+      NouviWeb
+      <% end %>
+      <!-- ende icon klickbar -->
+
       
-      <%= link_to 'My Site', root_path, class: 'navbar-brand' %>
-      
-      <a class="navbar-brand" href="#">Brand</a>
+      <a class="navbar-brand" href="#">for you to be seen</a>
     </div>
     
     <div class="collapse navbar-collapse" id="main-nav-collpase">
